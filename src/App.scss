@@ -1,0 +1,425 @@
+body {	
+
+    font-family: 'Oswald', sans-serif;
+    color: #84c754;
+    margin: 0;
+}
+
+#bodyDiv{
+    background-color: #001cb800;
+}
+
+a{
+    color: goldenrod;
+    text-decoration: none; 
+}
+
+a:hover{
+    color: #84c754;
+    background-color: transparent;
+    font-style: bold;
+}
+
+ul {		
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+ul li {
+    float: left;  	
+    padding: 10px;	
+    font-size: 120%;
+    color: #282a35e5;
+}
+
+#headerDiv{
+    background-color: #282a35f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.596);
+    justify-content: space-between;
+    display: flex;
+    height: 5em;
+    border-radius: 0 0 10px 10px;
+    z-index: 100;
+}
+#headerDiv:hover{
+    background-color: white;
+}
+
+#headerName{
+    margin-left: 1em;
+}
+
+#navBar{
+    padding-top: 1em;
+}
+
+#navBar li{
+    /*  */
+    color: goldenrod;
+    
+}
+
+#spaceHeaderRight{
+    padding: 5%;
+}
+
+#homeDiv{
+    height: 40em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 5em;
+    background-image: url("flutterBackground.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#innerHomeDiv{
+    display: flex;
+    margin-top: -0.5em;
+    background-image: linear-gradient(to left, #282a35ee , #282a35);
+    height: 40em;
+    padding: 10em 5em 5em 5em;
+}
+
+#storyDiv{
+    padding: 4em 2em 2em 2em;
+    width: 70%;
+    height:70%;
+    margin-top: -3em;
+    
+}
+
+#heroDiv {
+    height: 65%;
+    position: relative; /* Add this line */
+    width: 25%;
+    background-color: goldenrod;
+    border-radius: 20px;
+    z-index: 1;
+  }
+  
+
+
+.homeTitle{
+    font-family: 'Bruno Ace SC', cursive;
+    color: goldenrod;
+    font-size:5em;
+    margin: 2em 0 0 0;
+}
+
+#animProfessions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: moveUp 4s linear infinite;
+    transform-origin: bottom;
+    transition: transform 0.5s ease-in-out;
+    color: #282a35;
+}
+  
+  @keyframes moveUp {
+    0%, 100% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-100%);
+    }
+}
+
+#homeDivH{
+    color: goldenrod;
+    font-weight: 900;
+    font-size: 3em;
+    font-style: italic;
+}
+
+#expertiseDiv{
+    padding-top: 1em;
+    height: auto;
+    background-color: goldenrod;
+    color: #282a35;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+#expertiseHeading{
+    font-size:3em;
+}
+
+#blockHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.blockHedaing{
+    margin: 5px;
+}
+
+.blockDiv{
+    margin: 0 2em 0 2em;
+    width: 20%;
+    padding: 2em 1.5em 1.5em 1.5em;
+    height: auto;
+    color: #282a35e5;
+    border-top: 0.5em solid #282a35;
+    border-bottom: 0.5em solid #282a35;
+    border-radius: 4em;
+}
+#myLanguagesHr{
+    border-width: 0;
+    margin-top: 10em;
+}
+
+.language{
+    color: #282a35e5;
+    padding: 0 3em 0 3em;
+}
+
+#contactDiv{
+    display: flex;
+    justify-content: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
+    background-color: #282a35 ;
+    width: 97.5%;
+    height: auto;
+    padding: 1em;
+}
+
+
+.icons{
+    padding: 1em;
+}
+
+.homeDivP{
+    color: goldenrod;
+}
+#readMoreBtn{
+    color: #84c754;
+    cursor: pointer;
+}
+#readMoreBtn:hover{
+    color: goldenrod;
+}
+// progress bar
+#progress{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
+    height: auto;
+    margin-left: 12.5%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    padding: 2em;
+    color: #282a35;
+    border-top: 1em solid #282a35;
+    border-radius: 4em;
+    #progressLanguages{
+        font-size: xx-large;
+    }
+}
+.progress-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    flex: 1;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="range"] {
+    flex: 5;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #282a35;
+    border-radius: 1em;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  
+  input[type="range"]:hover {
+    opacity: 1;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .value {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+// drop down manu
+
+/* Existing styles for a and ul/li elements */
+
+/* Styles for the menu icon */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: goldenrod;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Styles for the menu items */
+.menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-items li {
+    margin-left: 20px;
+}
+
+#mainCertificateHolder{
+    margin-top: -2em;
+    text-align: center;
+    color: white;
+    background-image: url("flutterBackground.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#certificateBackground{
+    padding: 2em;
+    background-color: #282a35d7;
+}
+
+#certificatesDiv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-bottom: 2em;
+}
+
+  
+  /* Adjustments for small screens */
+@media (max-width: 576px) {
+    /* Hide the regular menu items */
+    .menu-items {
+      display: none;
+    }
+  
+    /* Show the menu icon */
+    .menu-icon {
+      display: block;
+    }
+
+  /* Modify other styles for small screens as needed */
+    #homeDiv{
+        height: auto;
+        padding: 0;
+        background-image: url("flutterBackground.png") ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        #innerHomeDiv{
+            background-image: linear-gradient(to left, #282a35cb , #282a35);
+            align-items: center;
+            padding: 10em 0 0 0;
+            width: 100%;
+            height: auto;
+            #storyDiv{
+                margin-bottom: 1em;
+                width: 90%;
+                font-size: small;
+            }
+            #heroDiv{
+                align-content: center;
+                width: 60%;
+                border-top: 0.01em solid goldenrod;
+                border-bottom: 0.01em solid goldenrod;
+
+                #HeroImage{
+                    width: auto;
+                    height: auto;
+                    margin-bottom: 2em;
+                }
+                #animProfessions{
+                    font-size: 1em;
+                    color: #282a35
+                }
+            }
+
+        }
+    }
+    #expertiseDiv{
+        height: auto;
+        #blockHolder{
+            flex-direction: column;
+            align-items: center;
+            .blockDiv{
+                width: 70%;
+                height: auto;
+                padding: 0 1em 0 1em;
+                margin: 1em;
+                border-radius: 10%;
+            }
+        }
+    }
+    #certificatesDiv{
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout adjustments for different screen sizes */
+@media (max-width: 768px) {
+  #innerHomeDiv {
+    flex-direction: column; /* Stack content vertically on small screens */
+  }
+
+  /* Add more layout adjustments for medium screens */
+}
+
+/* Adjustments for landscape tablets */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Add styles for medium-sized screens */
+}
+
+/* Adjustments for large screens (laptops/desktops) */
+@media (min-width: 993px) {
+  /* Add styles for large screens */
+}
+
+/* Add this CSS at the end of your existing CSS */
+.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px; /* Adjust the position as needed */
+    right: 0;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    z-index: 100;
+  }
+  
+ 
