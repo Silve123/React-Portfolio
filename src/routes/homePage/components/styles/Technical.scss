@@ -1,0 +1,213 @@
+
+
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+    .expertiseDiv {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dividerDiv {
+        align-items: center;
+    }
+    
+    .blockHolder {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        max-width: 70em;
+
+        img {
+            width: 100%;
+            opacity: 0.3;
+            border-radius: 40em 40em 0 20em;
+        }
+    
+        .block {
+            display: flex;
+    
+            .imgHoldingDiv {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                margin: 1em;
+            }
+    
+            .blockDiv {
+                width: 50%;
+                h2 {
+                    margin-top: 4em;
+                    font-style: italic;
+                    font-variant: small-caps;
+                }
+    
+                p {
+                    text-align: left;
+                    font-size: small;
+                }
+            }
+        }
+    }
+    
+    .softwareDev {
+        .imgHoldingDiv {
+            background-color: #ff0000d2;
+            border-radius: 40em 40em 0 20em;
+        }
+    
+        h2 {
+            color: #ff0000d2;
+        }
+    }
+    
+    .WebDev {
+        width: 90%;
+        justify-content: flex-end;
+    
+        .imgHoldingDiv {
+            background-color: green;
+            border-radius: 40em 40em 0 20em;
+        }
+    
+        h2 {
+            color: green;
+            text-align: right;
+        }
+    }
+    
+    .MobileDev {
+        width: 90%;
+        justify-content: flex-start;
+    
+        .imgHoldingDiv {
+            background-color: darkblue;
+            border-radius: 40em 40em 0 20em;
+        }
+    
+        h2 {
+            color: darkblue;
+            text-align: left;
+        }
+    }
+    
+}
+
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .blockHolder {
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 100%;
+            opacity: 0.3;
+            border-radius: 40em 40em 0 20em;
+        }
+        p{
+            font-size: normal;
+        }
+    }
+
+    .block {
+        margin-top: 1em;
+        .imgHoldingDiv {
+            width: 15em;
+            border-radius: 40em 40em 0 20em;
+        }
+
+        .blockDiv {
+            width: 40em; 
+        }
+    }
+
+    .softwareDev {
+        .imgHoldingDiv {
+            background-color: #ff0000d2;
+        }
+
+        h2 {
+            color: #ff0000d2;
+        }
+    }
+
+    .WebDev {
+        .imgHoldingDiv {
+            background-color: green;
+        }
+
+        h2 {
+            color: green;
+        }
+    }
+
+    .MobileDev {
+        .imgHoldingDiv {
+            background-color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+    }
+}
+
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .blockHolder {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        img {
+            max-width: 100%;
+            opacity: 0.3;
+            border-radius: 40em 40em 0 20em;
+        }
+        p{
+            font-size: small;
+        }
+    }
+
+    .block {
+        margin-top: 1em;
+        .imgHoldingDiv {
+            width: 10em;
+            border-radius: 40em 40em 0 20em;
+        }
+
+        .blockDiv {
+            width: auto; 
+            max-width: 30em;
+        }
+    }
+
+    .softwareDev {
+        .imgHoldingDiv {
+            background-color: #ff0000d2;
+        }
+
+        h2 {
+            color: #ff0000d2;
+        }
+    }
+
+    .WebDev {
+        .imgHoldingDiv {
+            background-color: green;
+        }
+
+        h2 {
+            color: green;
+        }
+    }
+
+    .MobileDev {
+        .imgHoldingDiv {
+            background-color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+    }
+}

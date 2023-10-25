@@ -1,0 +1,298 @@
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+    #homeDiv{
+        width: 100%;
+        display: flex;
+        #heroDiv{
+            width: 50%;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            #HeroImage{
+                width: 100%;
+                height: 100%;
+            }
+              
+        }
+        #storyDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            padding: 1em;
+            text-align: center;
+            .anim-div{
+                height: 3em;
+                padding-bottom: 1em;
+                background-color: #282a35;
+                border-radius: 10em;
+                #animProfessions {
+                    text-align: center;
+                    animation: moveUp 4s linear infinite;
+                    transform-origin: bottom;
+                    transition: transform 0.5s ease-in-out;
+                    color: white;
+                    font-size: 1.5em;
+                    &.visible {
+                        animation: none;
+                    }
+                }
+            }
+            #homeDivlogo{
+                width: 100%;
+                height: 15em;
+                background-image: url('mylogo.png');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .p-holding-div{
+                padding: 0 4em;
+                .homeDivP{
+                    font-size: 1em;
+                    text-align: center;
+                    color: #282a35;
+                }
+                .hire-me-div{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2em;
+                    .hire-me-button{
+                        cursor: pointer;
+                        background-color: #ff0000d2;
+                        padding: 0.7em 0.7em;
+                        width: 17%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .hire-me-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em #ff0000d2;
+                        border: solid 0.1em #ff0000d2;
+                        color: #ff0000d2;
+                        padding: 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                    .connect-button{
+                        cursor: pointer;
+                        background-color: #282a35;
+                        padding: 0.7em 0.7em;
+                        width: 17%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .connect-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em black;
+                        border: 0.1em solid black;
+                        color: black;
+                        padding: 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #homeDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        #heroDiv{
+            display: none;
+        }
+        #storyDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            .anim-div{
+                height: 4em;
+                background-color: #282a35;
+                border-radius: 10em;
+                #animProfessions {
+                    text-align: center;
+                    animation: moveUp 4s linear infinite;
+                    transform-origin: bottom;
+                    transition: transform 0.5s ease-in-out;
+                    color: white;
+                    font-size: 1.8em;
+                    &.visible {
+                        animation: none;
+                    }
+                }
+            }
+            #homeDivlogo{
+                width: 100%;
+                height: 15.5em;
+                background-image: url('sgela-crop.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .p-holding-div{
+                .homeDivP{
+                    font-size: 1.2em;
+                    text-align: center;
+                    color: #282a35;
+                }
+                .hire-me-div{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2em;
+                    .hire-me-button{
+                        cursor: pointer;
+                        background-color: #ff0000d2;
+                        padding: 0.7em 0.7em;
+                        width: 25%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .hire-me-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em #ff0000d2;
+                        border: solid 0.1em #ff0000d2;
+                        color: #ff0000d2;
+                        padding: 0.5em 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                    .connect-button{
+                        cursor: pointer;
+                        background-color: #282a35;
+                        padding: 0.7em 0.7em;
+                        width: 25%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .connect-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em black;
+                        border: 0.1em solid black;
+                        color: black;
+                        padding: 0.5em 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    #homeDiv{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        #heroDiv{
+            display: none;
+        }
+        #storyDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            text-align: center;
+            .anim-div{
+                height: 2.2em;
+                background-color: #282a35;
+                border-radius: 10em;
+                #animProfessions {
+                    text-align: center;
+                    animation: moveUp 4s linear infinite;
+                    transform-origin: bottom;
+                    transition: transform 0.5s ease-in-out;
+                    color: white;
+                    font-size: 1em;
+                    &.visible {
+                        animation: none;
+                    }
+                }
+            }
+            #homeDivlogo{
+                width: 100%;
+                height: 15.5em;
+                background-image: url('sgela-crop.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+            .p-holding-div{
+                .homeDivP{
+                    font-size: 0.8em;
+                    text-align: center;
+                    color: #282a35;
+                }
+                .hire-me-div{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 2em;
+                    .hire-me-button{
+                        cursor: pointer;
+                        background-color: #ff0000d2;
+                        padding: 0.7em 0.7em;
+                        width: 25%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .hire-me-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em #ff0000d2;
+                        border: solid 0.1em #ff0000d2;
+                        color: #ff0000d2;
+                        padding: 0.5em 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                    .connect-button{
+                        cursor: pointer;
+                        background-color: #282a35;
+                        padding: 0.7em 0.7em;
+                        width: 25%;
+                        border-radius: 1em;
+                        color: white;
+                        margin: 1em;
+                    }
+                    .connect-button:hover{
+                        background-color: white;
+                        box-shadow: -0.1em 0.1em black;
+                        border: 0.1em solid black;
+                        color: black;
+                        padding: 0.5em 0.5em;
+                        animation: beat .40s infinite alternate;
+                        @keyframes beat{
+                            to { transform: scale(1.20); }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+

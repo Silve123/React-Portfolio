@@ -1,0 +1,48 @@
+.FooterDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.2em solid #282a35;
+    background-color: white;
+    width: 100%;
+    margin-top: 1em;
+    .otherLinks{
+        width: 90%;
+        .manuLinks{
+            padding: 1em 0;
+            width: 50%;
+            display: flex;
+            margin: 0.5em 0;
+            justify-content: left;
+            .manueSingleLink{
+                cursor: pointer;
+                padding: 0.2em 0;
+                text-decoration: none;
+                color: grey;
+                font-size: x-small;
+                padding: 0 2em;
+            }
+            .manueSingleLink:hover{
+                color: #282a35;
+                font-weight: bold;
+                padding: 0 1.9em;
+            }
+        }
+    }
+    .contactDiv{
+        display: flex;
+        justify-content: center ;
+        width: 90%;
+        .icon{
+            padding: 0.5em;
+            .singleIcon{
+                width: 1.5em;
+                height: 1.5em;
+                color: #282a35;
+            }
+            .singleIcon:hover{
+                color: #ff0000d2;
+            }
+        }
+    }
+}

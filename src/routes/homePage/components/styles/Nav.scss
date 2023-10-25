@@ -1,0 +1,125 @@
+
+
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+    #headerDiv{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: white;
+        margin-bottom: 2em;
+            /* Styles for the menu items */
+        .menu-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                margin-left: 20px;
+                list-style-type: none;
+            }
+            a{
+                padding-right: 1em;
+                color: rgba(0, 0, 0, 0.658);
+                text-decoration: none;
+            }
+            a:hover{
+                color: black;
+            }
+            .cv-btn{
+                color: white;
+                margin-right: 1em;
+                padding: 0.25em 1em;
+                background-color: rgba(224, 24, 24, 0.726);
+                border-radius: 1em;
+                cursor: pointer;
+            }
+            .cv-btn:hover{
+                color: white;
+                box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.658);
+            }
+        }
+    
+    }
+}
+
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    #headerDiv{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: white;
+        margin-bottom: 2em;
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: normal;
+            li {
+                list-style-type: none;
+            }
+            a{
+                padding-right: 1em;
+                color: rgba(0, 0, 0, 0.658);
+                text-decoration: none;
+            }
+            a:hover{
+                color: black;
+            }
+            .cv-btn{
+                color: white;
+                padding: 0.25em 1em;
+                background-color: rgba(224, 24, 24, 0.726);
+                border-radius: 1em;
+                cursor: pointer;
+            }
+            .cv-btn:hover{
+                color: white;
+                box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.658);
+            }
+        }
+    
+    }
+}
+
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    #headerDiv{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background-color: white;
+        margin-bottom: 2em;
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-small;
+            li {
+                list-style-type: none;
+            }
+            a{
+                padding-right: 1em;
+                color: rgba(0, 0, 0, 0.658);
+                text-decoration: none;
+            }
+            a:hover{
+                color: black;
+            }
+            .cv-btn{
+                color: white;
+                padding: 0.25em 1em;
+                background-color: rgba(224, 24, 24, 0.726);
+                border-radius: 1em;
+                cursor: pointer;
+            }
+            .cv-btn:hover{
+                color: white;
+                box-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.658);
+            }
+        }
+    
+    }
+}

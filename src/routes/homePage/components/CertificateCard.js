@@ -1,10 +1,9 @@
 import React from 'react';
-import './certificateCard.scss'; // Import your SCSS file
+import './styles/certificateCard.scss'; 
 
 
 const CertificateCard = ({ name, description, source, link }) => {
   const handleClick = () => {
-    // Handle the click event, e.g., open the link in a new tab
     window.open(link, '_blank');
   };
 

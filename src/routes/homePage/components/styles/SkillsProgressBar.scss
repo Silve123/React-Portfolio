@@ -1,0 +1,140 @@
+/* Common styles for all screen sizes */
+#progress {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.progressHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #282a35;
+    padding: 4em 0;
+}
+
+h1 {
+    color: white;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar {
+    display: flex;
+    width: 45%;
+    margin: 1em 0;
+}
+
+input[type="range"] {
+    flex: 5;
+    appearance: none;
+    background: white;
+    border-radius: 1em;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]:hover {
+    background: #ff0000c9;
+    opacity: 1;
+    animation: beat .45s infinite alternate;
+    transform-origin: center;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label,
+span {
+    padding: 0 3em;
+    color: white;
+    font-weight: bolder;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+.right-progress {
+    justify-content: right;
+}
+
+#progressLanguages {
+    font-size: xx-large;
+}
+
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+    .progress-bar {
+        width: 45%;
+    }
+}
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    label,
+    span {
+        padding: 0 4em;
+    }
+
+    input[type="range"]:hover {
+        animation: beat .60s infinite alternate;
+        transform-origin: center;
+        @keyframes beat {
+            to {
+                transform: scale(0.03);
+            }
+        }
+    }
+}
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-bar {
+        width: 100%;
+    }
+
+    label,
+    span {
+        padding: 0 2em;
+    }
+
+    input[type="range"]:hover {
+        animation: beat .60s infinite alternate;
+        transform-origin: center;
+        @keyframes beat {
+            to {
+                transform: scale(0.03);
+            }
+        }
+    }
+}

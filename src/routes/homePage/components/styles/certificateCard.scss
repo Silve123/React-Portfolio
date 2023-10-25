@@ -1,0 +1,120 @@
+
+.certificate-card {
+  border-bottom: 0.9em solid #282a3500; 
+  border-radius: 4em; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.623); 
+  backdrop-filter: blur(0em); 
+  cursor: pointer;
+  p{
+    color: white;
+  }
+}
+
+.certificate-card:hover{
+  border-bottom: 0.9em solid #ff0000d2; 
+  box-shadow: 0 1px 2px #ff0000d2; 
+  transform-origin: center;
+  background-color: #282a3550;
+  backdrop-filter: none; 
+  
+  animation: beat .90s infinite alternate;
+  @keyframes beat{
+      to { transform: scale(1.20); }
+  }
+  h3{
+    text-decoration: underline;
+  }
+  .certificate-link{
+    color: white;
+  }
+}
+  
+  .certificate-image {
+    max-width: 100%; 
+    height: auto;
+  }
+  
+  .certificate-title {
+    font-size: 18px; 
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  .certificate-description {
+    font-size: 14px;
+    margin-top: 8px; 
+  }
+  
+  .certificate-details {
+    font-size: 14px; 
+    margin-top: 8px; 
+  }
+  
+  .certificate-link {
+    color: white; 
+    text-decoration: none; 
+    margin-top: 8px; 
+  }
+  
+  .certificate-link:hover {
+    text-decoration: underline; 
+  }
+
+
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+  .certificate-card{
+    padding: 1em; 
+    margin: 0 1.5em; 
+  }
+}
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .certificate-card{
+    width: 70%;
+    padding: 2em 1em; 
+    margin: 1.5em 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0, 0, 0); 
+    backdrop-filter: blur(0.3em); 
+    .certificate-title{
+      font-size: 26px;
+      width: 70%;
+    }
+    .certificate-description {
+      width: 90%;
+      font-size: 20px;
+    }
+  }
+}
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  .certificate-card{
+    width: 90%;
+    padding: 2em 1em; 
+    margin: 1.5em 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgb(0, 0, 0); 
+    backdrop-filter: blur(0.3em); 
+    .certificate-title{
+      font-size: 14px;
+      width: 90%;
+    }
+    .certificate-description {
+      width: 90%;
+      font-size: 12px;
+    }
+  }
+  .certificate-card:hover{
+    animation: beat .90s infinite alternate;
+    @keyframes beat{
+        to { transform: scale(1.10); }
+    }
+  }
+}

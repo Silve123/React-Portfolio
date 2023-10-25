@@ -1,0 +1,19 @@
+.whatsapp-button{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 8em;
+    img{
+        width: 100%;
+    }
+    img:hover{
+        animation: beat .45s infinite alternate;
+        transform-origin: center;
+        @keyframes beat{
+            to { transform: scale(1.20); }
+        }
+    }          
+
+}

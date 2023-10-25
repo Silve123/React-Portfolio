@@ -1,0 +1,105 @@
+
+
+/* Media Query for Desktop (greater than or equal to 1024px) */
+@media (min-width: 1024px) {
+    .slider-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .slider {
+            width: 100%;
+            display: flex;
+            background-color: #282a35;
+            justify-content: center;
+            padding: 0.5em 0;
+        }
+    
+        .icon {
+            color: grey;
+            width: 2.5em;
+            height: 2.5em;
+            margin: 0.7em 1.5em;
+        }
+    
+        .active .icon {
+            color: white;
+            animation: beat .50s infinite alternate;
+            transform-origin: center;
+            @keyframes beat{
+                to { transform: scale(1.03); }
+            }
+        }
+    
+    }
+}
+
+/* Media Query for Tablets (between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slider-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .slider {
+            width: 100%;
+            display: flex;
+            background-color: #282a35;
+            justify-content: center;
+        }
+    
+        .icon {
+            color: grey;
+            width: 1.5em;
+            height: 1.5em;
+            margin: 1em;
+        }
+    
+        .active .icon {
+            color: white;
+            animation: beat .50s infinite alternate;
+            transform-origin: center;
+            @keyframes beat{
+                to { transform: scale(1.03); }
+            }
+        }
+    
+    }
+}
+
+/* Media Query for Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .slider-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        .slider {
+            width: 100%;
+            display: flex;
+            background-color: #282a35;
+            justify-content: center;
+        }
+    
+        .icon {
+            color: grey;
+            width: 2.5em;
+            height: 2.5em;
+            margin: 1em;
+        }
+    
+        .active .icon {
+            color: white;
+            animation: beat .50s infinite alternate;
+            transform-origin: center;
+            @keyframes beat{
+                to { transform: scale(1.03); }
+            }
+        }
+    
+    }
+    // displays only onthe activee icon
+    .slider .slider-item:not(.active) .icon {
+        display: none;
+    }
+}
